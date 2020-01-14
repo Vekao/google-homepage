@@ -1,1 +1,1 @@
-This is Vekao's first git project
+This project is an exercice to improve my HTML and CSS skills. It is part of the exercices of the training site "the Odin project".
