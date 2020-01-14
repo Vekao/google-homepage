@@ -27,6 +27,9 @@ li a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
 
 header {
     height: 65px;
@@ -67,6 +70,10 @@ header li a {
     opacity: 0.55;
 }
 
+.logo_menu:hover {
+    opacity: 1;
+}
+
 .sign_in {
     color: #fff;
     font-weight: bold;
@@ -76,6 +83,12 @@ header li a {
     border-radius: 2px;
     display: inline-block;
     background-image: linear-gradient(rgb(67, 135, 253), rgb(70, 131, 234));
+}
+
+.sign_in:hover {
+    cursor: default;
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+    text-decoration: none;
 }
 
 
@@ -104,21 +117,6 @@ header li a {
     margin-right: 25px;
     display: flex;
     flex-direction: row;
-}
-
-.button {
-    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
-    background-color:#f2f2f2;
-    border: 1px solid #f2f2f2;
-    border-radius: 4px;
-    color: #5F6368;
-    font-size: 14px;
-    margin: 11px 4px;
-    padding: 0 20px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    cursor: pointer;
 }
 
 .logo_magnifying_glass{
@@ -155,6 +153,29 @@ header li a {
     padding-top: 18px;
     text-align: center;
     margin-right: 15px;
+}
+
+.button {
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color:#f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 20px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color:#222;
 }
 
 
