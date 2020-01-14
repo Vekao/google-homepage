@@ -6,7 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -26,8 +28,6 @@ li a {
 }
 
 
-
-/**HEADER**/
 header {
     height: 65px;
     font-size: 13px;
@@ -79,11 +79,11 @@ header li a {
 }
 
 
-/**MAIN**/
 .main {
     display: flex;
     flex-direction: column;
     align-items:center;
+    flex-grow: 1;
 }
 
 .logo_google {
@@ -97,10 +97,13 @@ header li a {
     border: 1px solid #dfe1e5;
     width: 582px;
     padding-left: 42px;
+    font-size: 16px;
 }
 
 .searchform {
     margin-right: 25px;
+    display: flex;
+    flex-direction: row;
 }
 
 .button {
@@ -118,7 +121,7 @@ header li a {
     cursor: pointer;
 }
 
-.loupe {
+.logo_magnifying_glass{
     color:#9AA0A6;
     height: 20px;
     width: 20px;
@@ -128,12 +131,24 @@ header li a {
     position: relative;
 }
 
-.loupe svg {
+.logo_magnifying_glass svg {
     display: block;
     height: 100%;
     width: 100%;
     margin-left: 38px;
     margin-top: 4px;
+}
+
+.logo_microphone {
+    background: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
+    background-size: auto;
+    height: 24px;
+    width: 24px;
+    background-size: 24px;
+    position: absolute;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: -39px;
 }
 
 .buttons {
@@ -143,18 +158,40 @@ header li a {
 }
 
 
-
-/**FOOTER**/
 footer {
     height: 40px;
-    bottom: 0;
-    color: #5f6368;
     font-size: 14px;
+    align-items: flex-end;
+    background:#f2f2f2;
+    line-height: 40px;
+    min-width: 980px;
+    border-top: 1px solid#e4e4e4;
 }
 
-
+footer a {
+    color: #5f6368;
+    text-decoration: none;
+}
 .footer_left, .footer_right {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.footer_left {
+    margin-left: 3px;
+    width: 323px;
+}
+
+.footer_left a {
+    padding-left: 27px;
+}
+
+.footer_right {
+    margin-right: 30px;
+    width: 216px;
+}
+
+.footer_right a {
+    padding-left: 27px;
 }
